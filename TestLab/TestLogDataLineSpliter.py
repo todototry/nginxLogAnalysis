@@ -32,7 +32,8 @@ splitednormal1 = normaldata1.rsplit('"')
 splitednormal2 = normaldata2.rsplit('"')
 splitedbroken = brokendata.rsplit('"')
 
-#find out if the rsplit makes the right effect, ----works well for all kinds of data: no matter random ,normal , or broken_data.
+#find out if the rsplit makes the right effect, ----works well for all kinds of data: no matter random ,normal ,
+# or broken_data.
 print len(splitedrandom)
 print len(splitedtest)
 print len(splitednormal1)
@@ -85,8 +86,8 @@ print block0
 #block 0
 remote_addr = block0[0]
 remote_user = block0[2]
-time_local = block0[3].replace('[','')
-time_zone = block0[4].replace(']','')
+time_local = block0[3].replace('[', '')
+time_zone = block0[4].replace(']', '')
 
 #block 1
 requestmethod = block1[0]
@@ -114,8 +115,6 @@ else:
     http_user_agent_addtionalinfo = '-'
 #block 6
 
-
-
 #block 7
 http_x_forwarded_for = block7[0]
 
@@ -135,40 +134,32 @@ print "time_local: " + time_local
 print "time_zone: " + time_zone
 
 #block 1
-print "requestmethod :"  +   requestmethod
-print "requestmethod :"  +   requesturl
-print "requestmethod: "  +   requestprotocal
+print "requestmethod :" + requestmethod
+print "requestmethod :" + requesturl
+print "requestmethod: " + requestprotocal
 
 #block 2
-print "status :"  +    status
-print "body_bytes_sent: "  +   body_bytes_sent
+print "status :" + status
+print "body_bytes_sent: " + body_bytes_sent
 
 #block 3
-print "http_referer:"  +    http_referer
+print "http_referer:" + http_referer
 
 #block 4
 
 #block 5
-print "http_user_agent:"  +   http_user_agent
-print "http_user_agent_version:"  +   http_user_agent_version
-print "http_user_agent_addtionalinfo:"  +   http_user_agent_addtionalinfo
+print "http_user_agent:" + http_user_agent
+print "http_user_agent_version:" + http_user_agent_version
+print "http_user_agent_addtionalinfo:" + http_user_agent_addtionalinfo
 
 #block 6
 
-
-
 #block 7
-print "http_x_forwarded_for:"  +    http_x_forwarded_for
+print "http_x_forwarded_for:" + http_x_forwarded_for
 
 #block 8
-print "server_name:"  +  server_name
-print "proxy_host:"  +   proxy_host
-print "upstream_addr:"  +    upstream_addr
-print "http_uuid:"  +    http_uuid
-print "http_session_token:"  +   http_session_token
-
-
-
-
-
-
+print "server_name:" + server_name
+print "proxy_host:" + proxy_host
+print "upstream_addr:" + upstream_addr
+print "http_uuid:" + http_uuid
+print "http_session_token:" + http_session_token
